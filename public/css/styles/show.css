@@ -1,0 +1,161 @@
+main .box div.content{
+   
+    height: max-content;
+     
+     grid-row-gap: 15px;
+    
+     
+ }
+ main .box ul.pagination{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin-top:10px ;
+ }
+
+ header .banner ul{
+    list-style-type: none;  
+}
+header .banner ul li.dropdown-btn{
+    margin-top: 10px;
+    height: 40px;
+    text-align: center;
+    float: left;
+    position: relative;
+    background: #3F3F3F;
+    border-radius: 20px;
+    color: #fff;
+    padding: 2%;
+    width: 130px;
+    cursor: pointer;
+}
+header .banner ul ul li{
+    margin-top: 10px;
+    padding: 10px  ;
+}
+header .banner ul .dropdown-box{
+    position: relative;
+    margin-top: 10px;
+    width: 150px;
+    text-align: start;
+    background: #252525;
+    z-index: 9999;
+    
+    display: grid;
+    padding: 15px;
+    border-radius: 20px;
+    height: max-content;
+    
+    
+}
+header .banner ul .hide{
+    display: none;
+}
+
+header .banner ul .dropdown-box  a{
+    text-decoration: none;
+    z-index: 9999;
+    cursor: pointer;
+    font-size: 20px;
+    color: white;  
+    margin-left: 1px;
+    margin-top: 3px;
+    padding: 2px;
+}
+header .banner ul .dropdown-box  a:hover{
+    
+    font-size: 25px;
+    color: white;  
+    margin-left: 5px;
+     background-color: #E7511A;
+     border-radius: 5px;
+     padding: 2%;
+    
+}
+ 
+main .box .content div .hide{
+    opacity: 1;
+}
+main .box .content div .hide a{
+    text-decoration: none;
+    background-color: #E7511A;
+    color: #fff;
+    border: none;
+    padding: 5% 7%;
+    position: relative;
+    margin-right: 0%;
+    font-size: 1em;
+    font-weight: 500;
+    border-radius: 50%;
+}
+main .box .content div .show-cover{
+    opacity: .2;
+}
+ 
+ 
+ 
+
+ @media(max-width:1245px){
+     main .box .content{
+         grid-template-columns: 20% 20% 20% 20% ;
+         grid-gap: 1px 6%;
+         
+     }
+     main .box .content div{
+         width: 250px;
+         height: 150px;
+         margin: 0 20px;
+     }
+ }
+ @media(max-width:1080px){
+     main .box{
+         height: 400px;
+     }
+     main .box .content{
+         grid-template-columns: 20% 20% 20% ;
+         grid-gap: 4% 12%;
+         
+     }
+     main .box .content div{
+         width: 250px;
+         height: 150px;
+         margin: 0 30px;
+     }
+ }
+ @media(max-width:886px){
+     header .banner{
+         margin-top:7%;
+     }
+     header .banner h1{
+         font-size: 40px;
+         line-height: 117px;
+         
+         color: #DADADA;
+     }
+     main .box .content{
+         grid-template-columns: 20% 20% ;
+         grid-gap: 4% 32%;
+         
+     }
+     main .box .content div{
+         width: 250px;
+         height: 150px;
+         margin: 0 30px;
+     }
+ }
+ @media(max-width:570px){
+     main .box{
+         height: 900px;
+     }
+     main .box .content{
+         grid-template-columns: 20%;
+         grid-gap: 5% 30%;
+         
+     }
+     main .box .content div{
+         width: 350px;
+         height: 200px;
+         margin: 0 40px;
+     }
+ }

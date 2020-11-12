@@ -1,0 +1,44 @@
+header .banner{
+    width: 90%;
+    
+}
+header .banner .rated strong{
+    width: 20%;
+    color: white;
+    padding-left: 2%;
+    font-size: 1.5em;
+    
+}
+header .banner a{
+    text-decoration: none;
+    color: #E7511A;
+    font-size: 1.3em;
+}
+header form{
+    display: flex;
+    height: 40px;
+    background: #3F3F3F;
+    border-radius: 10px;
+    padding: 2px;
+    min-width: 18%!important;
+    
+}
+header form .search-data{
+    height: 100%;
+    widows: 100%;
+    padding: 0 10px;
+    color: #fff;
+    font-weight: 500;
+    background: none;
+    border: none;
+    font-size: 17px;
+}
+header form button{
+    padding: 0 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 17px;
+    color: #D1D0CF;
+    border-radius: 20px;
+}

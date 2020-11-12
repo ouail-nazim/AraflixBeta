@@ -1,0 +1,140 @@
+
+header{
+    height: 20%; 
+    position: relative; 
+    
+       
+}
+header .banner{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    width: auto;
+    max-width: 1000px;
+    height: 80%;
+    margin-top:3%;
+    padding: 1%;
+}
+header .banner ul{
+    list-style-type: none;  
+}
+header .banner ul li.dropdown-btn{
+    margin-top: 50px;
+    height: 30px;
+    text-align: center;
+    float: left;
+    position: relative;
+    margin-left: 10px;
+    background: #3F3F3F;
+    border-radius: 10px;
+    color: #fff;
+    padding: 2%;
+    width: 120px;
+    cursor: pointer;
+}
+header .banner ul ul li{
+    margin-top: 10px;
+    padding: 10px  ;
+}
+header .banner ul .dropdown-box{
+    margin-top: 13px;
+    width: 150px;
+    text-align: start;
+    background: #252525;
+    z-index: 9999;
+    padding: 10px;
+    display: grid;
+    height: 300px;
+    overflow: scroll;
+    transition: 2000ms;
+    
+}
+header .banner ul .hide{
+    display: none;
+}
+
+header .banner ul .dropdown-box  a{
+    text-decoration: none;
+    z-index: 9999;
+    cursor: pointer;
+    font-size: 20px;
+    color: white;  
+    margin-left: 1px;
+    margin-top: 3px;
+    padding: 2px;
+}
+header .banner ul .dropdown-box  a:hover{
+    
+    font-size: 25px;
+    color: white;  
+    margin-left: 5px;
+     background-color: #E7511A;
+     border-radius: 5px;
+     padding: 2%;
+    
+}
+
+@media(max-width:1245px){
+    main .box .content{
+        grid-template-columns: 20% 20% 20% 20% ;
+        grid-gap: 1px 6%;
+        
+    }
+    main .box .content div{
+        width: 250px;
+        height: 150px;
+        margin: 0 20px;
+    }
+}
+@media(max-width:1080px){
+    main .box{
+        height: 400px;
+    }
+    main .box .content{
+        grid-template-columns: 20% 20% 20% ;
+        grid-gap: 4% 12%;
+        
+    }
+    main .box .content div{
+        width: 250px;
+        height: 150px;
+        margin: 0 30px;
+    }
+}
+@media(max-width:886px){
+    header .banner{
+        margin-top:7%;
+    }
+    header .banner h1{
+        font-size: 40px;
+        line-height: 117px;
+        
+        color: #DADADA;
+    }
+    main .box .content{
+        grid-template-columns: 20% 20% ;
+        grid-gap: 4% 32%;
+        
+    }
+    main .box .content div{
+        width: 250px;
+        height: 150px;
+        margin: 0 30px;
+    }
+}
+@media(max-width:570px){
+    main .box{
+        height: 900px;
+    }
+    main .box .content{
+        grid-template-columns: 20%;
+        grid-gap: 5% 30%;
+        
+    }
+    main .box .content div{
+        width: 350px;
+        height: 200px;
+        margin: 0 40px;
+    }
+}
