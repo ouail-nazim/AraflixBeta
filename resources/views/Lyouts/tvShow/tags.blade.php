@@ -1,6 +1,6 @@
 @extends('items.App')
 @section('title')
-    | movies | {{$categorysName}}
+    | Tv Shows | {{$categorysName}}
 @endsection
 @section('head')
     <link href="{{ asset('css/styles/movies.css') }}" rel="stylesheet">
@@ -8,7 +8,7 @@
 @endsection
 @section('content')
     <!-- header -->
-    @include('items.movies_header')
+    @include('items.tvShow_header')
 
     <!-- main content -->
     <main>
@@ -18,11 +18,11 @@
                 <h3>Categorys | {{$categorysName}} </h3>
             </header>
             <div class="content">
-                @forelse($movies as $show)
+                @forelse($tvShows as $show)
                     @include('items.show_box')
-                    @empty
-                        <p style="color: #C4C4C4;font-size: 2em;">this Category don't have any show  </p>
-                    @endforelse
+                @empty
+                    <p style="color: #C4C4C4;font-size: 2em;">this Category don't have any show  </p>
+                @endforelse
 
 
 

@@ -15,8 +15,20 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'HomeController@index');
 Route::get('/movies', 'HomeController@movies');
+Route::get('/movies/{name}', 'HomeController@watcheMovies');
+
+Route::get('/tvShow', 'HomeController@tvShow');
+Route::get('/tvShow/{name}', 'HomeController@getTvShow');
+Route::get('/tvShow/{name}/season{s}/episode{ep}', 'HomeController@watcheTvShow');
+
+Route::get('/anime', function () {
+
+    return view('Lyouts.anime.anime');
+});
+
 
 Route::get('/test', function () {
+
     $shows=factory(App\Show::class, 10)->make();
     foreach ($shows as $show){
         $show->save();
@@ -25,4 +37,5 @@ Route::get('/test', function () {
     foreach ($episodes as $episode){
         $episode->save();
     }
+    dump('done');
 });

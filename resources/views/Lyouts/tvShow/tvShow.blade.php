@@ -1,6 +1,6 @@
 @extends('items.App')
 @section('title')
-    | movies
+    | Tv Shows
 @endsection
 
 @section('head')
@@ -8,7 +8,7 @@
 @endsection
 @section('content')
     <!-- header -->
-    @include('items.movies_header')
+    @include('items.tvShow_header')
 
     <!-- main content -->
     <main>
@@ -19,79 +19,79 @@
                 <a href="#" class="more">view all ></a>
             </header>
             <div class="content">
-                @foreach($popular_movies as $show)
+                @foreach($popular_tvShows as $show)
                     @include('items.show_box')
                 @endforeach
             </div>
         </div>
-        <!-- new movies -->
+        <!-- new Tv Shows -->
         <div class="box">
             <header>
-                <h3>New movies</h3>
+                <h3>New Tv Shows</h3>
                 <a href="#" class="more">view all ></a>
             </header>
             <div class="content">
-                @foreach($new_movies as $show)
+                @foreach($new_tvShows as $show)
                     @include('items.show_box')
                 @endforeach
             </div>
         </div>
-        <!-- Latest Movies Added -->
+        <!-- Latest Tv Shows Added -->
         <div class="box">
             <header>
-                <h3>Latest Movies Added</h3>
+                <h3>Latest Tv Shows Added</h3>
                 <a href="#" class="more">view all ></a>
             </header>
             <div class="content">
-                @foreach($new_movies_added as $show)
+                @foreach($new_tvShows_added as $show)
                     @include('items.show_box')
                 @endforeach
             </div>
         </div>
-        <!-- Family Movies -->
+        <!-- Family Tv Shows -->
         <div class="box">
             <header>
-                <h3>Family Movies </h3>
+                <h3>Family Tv Shows </h3>
                 <a href="#" class="more">view all ></a>
             </header>
             <div class="content">
-                @foreach($Family_movies as $show)
+                @foreach($Family_tvShows as $show)
                     @include('items.show_box')
                 @endforeach
             </div>
         </div>
-        <!-- Action Movies -->
+        <!-- Action Tv Shows -->
         <div class="box">
             <header>
-                <h3>Action Movies </h3>
+                <h3>Action Tv Shows </h3>
                 <a href="#" class="more">view all ></a>
             </header>
             <div class="content">
-                @foreach($Action_movies as $show)
+                @foreach($Action_tvShows as $show)
                     @include('items.show_box')
                 @endforeach
             </div>
         </div>
-        <!-- Comedy Movies -->
+        <!-- Comedy Tv Shows -->
         <div class="box">
             <header>
-                <h3>Comedy Movies </h3>
+                <h3>Comedy Tv Shows </h3>
                 <a href="#" class="more">view all ></a>
             </header>
             <div class="content">
-                @foreach($Comedy_movies as $show)
+                @foreach($Comedy_tvShows as $show)
                     @include('items.show_box')
                 @endforeach
             </div>
         </div>
-        <!-- Horror Movies -->
+        <!-- Horror Tv Shows -->
         <div class="box">
             <header>
-                <h3>Horror Movies </h3>
+                <h3>Horror Tv Shows </h3>
                 <a href="#" class="more">view all ></a>
             </header>
             <div class="content">
-                @foreach($Horror_movies as $show)
+                @foreach($Horror_tvShows as $show)
                     @include('items.show_box')
                 @endforeach
             </div>

@@ -2,7 +2,7 @@
 @section('content')
     <!-- header -->
     <header>
-        <img src="/images/1.jpg" alt="">
+        <img src="https://i.ytimg.com/vi/BH2j1Tu6RBU/maxresdefault.jpg" alt="">
         {{--<img src="{{$trending->cover}}" alt="">--}}
         <div class="banner">
 
@@ -19,8 +19,8 @@
             </div>
             <br><br>
             <div class="buttons">
-                <a class="btn" href="#">Watch now &nbsp; <i class="fa fa-play"></i></a>
-                <a href="#">More details + </a>
+                <a class="btn" href="/tvShow/{{$trending->title}}">Watch now &nbsp; <i class="fa fa-play"></i></a>
+                <a href="/" onclick="window.open('https://www.youtube.com/embed/TZE9gVF1QbA');">Official Trailer <i class="fa fa-youtube"></i> </a>
             </div>
         </div>
     </header>
@@ -102,9 +102,11 @@
         </div>
     </main>
 
-
 @endsection
 
+@section('footer')
+    @include('items.footer')
+@endsection
 
 
 
